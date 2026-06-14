@@ -1,9 +1,7 @@
 import {
   Footer,
-  Hero,
   IntelFeed,
   PackageGrid,
-  SkillsPanel,
   TechCollage,
   TopBar,
 } from './components';
@@ -13,13 +11,11 @@ export function App() {
     <div className="app">
       <TopBar />
       <main className="main">
-        <Hero />
         <TechCollage />
         <div className="dashboard-grid">
           <PackageGrid />
           <aside className="sidebar">
             <IntelFeed />
-            <SkillsPanel />
           </aside>
         </div>
       </main>

@@ -559,92 +559,49 @@ a:hover {
 }
 
 .tech-collage__header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 0.75rem;
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border-dim);
 }
 
-.tech-collage__status {
+.tech-collage__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-collage__chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-  color: var(--accent-green);
-  text-transform: uppercase;
-}
-
-.tech-collage__grid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-auto-rows: minmax(88px, auto);
-  gap: 0.65rem;
-}
-
-.tech-collage__tile {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  padding: 0.85rem 0.5rem;
+  gap: 0.45rem;
+  padding: 0.45rem 0.75rem;
   background: var(--bg-card);
   border: 1px solid var(--border-dim);
-  overflow: hidden;
-  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.tech-collage__tile:hover {
-  border-color: var(--tile-accent, var(--border-bright));
+.tech-collage__chip:hover {
+  border-color: color-mix(in srgb, var(--chip-accent) 55%, var(--border-bright));
   background: var(--bg-card-hover);
-  transform: translateY(-2px);
-}
-
-.tech-collage__tile--span-2 {
-  grid-column: span 2;
-}
-
-.tech-collage__tile-glow {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--tile-accent) 18%, transparent), transparent 70%);
-  pointer-events: none;
 }
 
 .tech-collage__icon {
-  position: relative;
-  z-index: 1;
-  width: 32px;
-  height: 32px;
-  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tile-accent) 50%, transparent));
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .tech-collage__name {
-  position: relative;
-  z-index: 1;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-primary);
-}
-
-.tech-collage__category {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .footer {
@@ -694,17 +651,5 @@ a:hover {
 
   .main {
     padding: 1.25rem 1rem 2rem;
-  }
-
-  .hero {
-    padding: 1.25rem;
-  }
-
-  .tech-collage__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .tech-collage__tile--span-2 {
-    grid-column: span 1;
   }
 }

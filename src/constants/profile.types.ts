@@ -58,5 +58,4 @@ export type CollageTech = {
   slug: string;
   brandColor: string;
   category: CollageCategory;
-  span: 1 | 2;
 };
