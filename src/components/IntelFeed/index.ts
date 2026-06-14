@@ -1,0 +1,1 @@
+export { IntelFeed } from './IntelFeed';
