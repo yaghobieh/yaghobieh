@@ -330,11 +330,20 @@ a:hover {
   padding: 1rem;
   transition: border-color 0.15s ease, background 0.15s ease;
   position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
-.package-card:hover {
-  border-color: var(--border-bright);
+.package-card--link:hover {
+  border-color: var(--accent-green-dim);
   background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+.package-card--link:focus-visible {
+  outline: 1px solid var(--accent-green);
+  outline-offset: 2px;
 }
 
 .package-card__header {
@@ -415,13 +424,6 @@ a:hover {
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.06em;
-}
-
-.package-card__links a {
-  color: var(--text-muted);
-}
-
-.package-card__links a:hover {
   color: var(--accent-green);
 }
 
@@ -564,44 +566,158 @@ a:hover {
   border-bottom: 1px solid var(--border-dim);
 }
 
-.tech-collage__chips {
+.tech-collage__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.tech-collage__group {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+  padding: 0.75rem;
+}
+
+.tech-collage__group-label {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.tech-collage__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.4rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.tech-collage__chip {
-  display: inline-flex;
+.tech-collage__item {
+  display: flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.75rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-dim);
+  gap: 0.55rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid transparent;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.tech-collage__chip:hover {
-  border-color: color-mix(in srgb, var(--chip-accent) 55%, var(--border-bright));
+.tech-collage__item:hover {
+  border-color: color-mix(in srgb, var(--chip-accent) 45%, var(--border-dim));
   background: var(--bg-card-hover);
 }
 
 .tech-collage__icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
 .tech-collage__name {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--text-primary);
-  white-space: nowrap;
+}
+
+.profile-about {
+  margin-bottom: 1.5rem;
+}
+
+.profile-about__card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-dim);
+  padding: 1.25rem;
+}
+
+.profile-about__avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 2px solid var(--border-bright);
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.12);
+}
+
+.profile-about__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-about__meta {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.profile-about__name {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.profile-about__title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.profile-about__bio {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 62ch;
+  margin-bottom: 1rem;
+}
+
+.profile-about__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.profile-about__link {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-dim);
+  padding: 0.4rem 0.75rem;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+  text-decoration: none;
+}
+
+.profile-about__link:hover {
+  color: var(--accent-green);
+  border-color: var(--border-bright);
+  text-decoration: none;
+}
+
+.profile-about__link--primary {
+  color: var(--accent-green);
+  border-color: var(--accent-green-dim);
+  background: rgba(0, 255, 65, 0.06);
 }
 
 .footer {
@@ -651,5 +767,23 @@ a:hover {
 
   .main {
     padding: 1.25rem 1rem 2rem;
+  }
+
+  .profile-about__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-about__bio {
+    max-width: none;
+  }
+
+  .profile-about__links {
+    justify-content: center;
+  }
+
+  .tech-collage__groups {
+    grid-template-columns: 1fr;
   }
 }

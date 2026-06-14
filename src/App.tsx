@@ -2,6 +2,7 @@ import {
   Footer,
   IntelFeed,
   PackageGrid,
+  ProfileAbout,
   TechCollage,
   TopBar,
 } from './components';
@@ -11,6 +12,7 @@ export function App() {
     <div className="app">
       <TopBar />
       <main className="main">
+        <ProfileAbout />
         <TechCollage />
         <div className="dashboard-grid">
           <PackageGrid />

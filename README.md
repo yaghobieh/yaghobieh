@@ -7,7 +7,7 @@
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-ForgeStack%20Intel-00ff41?style=for-the-badge&logo=github&logoColor=white)](https://yaghobieh.github.io/yaghobieh/)
 [![GitHub](https://img.shields.io/badge/GitHub-yaghobieh-181717?style=for-the-badge&logo=github)](https://github.com/yaghobieh)
 [![npm](https://img.shields.io/badge/npm-@forgedevstack-CB3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/~yaghobieh)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-John%20Yaghobieh-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/johnyaghobieh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-John%20Yaghobieh-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/john-yaghobieh-4baa93107/)
 
 Building the **ForgeStack** open-source ecosystem — React, TypeScript, Node.js, MongoDB.
 
@@ -73,7 +73,7 @@ Building the **ForgeStack** open-source ecosystem — React, TypeScript, Node.js
 
 - 🌐 [Live Dashboard](https://yaghobieh.github.io/yaghobieh/)
 - 📦 [npm Profile](https://www.npmjs.com/~yaghobieh)
-- 💼 [LinkedIn](https://www.linkedin.com/in/johnyaghobieh)
+- 💼 [LinkedIn](https://www.linkedin.com/in/john-yaghobieh-4baa93107/)
 - 🐙 [GitHub Repositories](https://github.com/yaghobieh?tab=repositories)
 
 ---

@@ -11,6 +11,8 @@ export type ProfileData = {
   title: string;
   location: string;
   tagline: string;
+  bio: string;
+  avatarUrl: string;
   githubUrl: string;
   linkedinUrl: string;
   npmUrl: string;
@@ -31,6 +33,7 @@ export type PackageEntry = {
   status: StatusLabel;
   npmUrl: string;
   githubUrl: string;
+  landingUrl?: string;
 };
 
 export type IdeaBrief = {
@@ -50,7 +53,7 @@ export type SkillEntry = {
   percent: number;
 };
 
-export type CollageCategory = 'frontend' | 'backend' | 'ops' | 'styling' | 'tools' | 'data';
+export type CollageCategory = 'frontend' | 'backend' | 'ops' | 'styling' | 'tools' | 'data' | 'ai';
 
 export type CollageTech = {
   id: string;
@@ -58,4 +61,5 @@ export type CollageTech = {
   slug: string;
   brandColor: string;
   category: CollageCategory;
+  iconUrl?: string;
 };

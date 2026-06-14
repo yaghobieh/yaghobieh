@@ -20,8 +20,10 @@ export const PROFILE: ProfileData = {
   title: 'Full Stack Developer & Team Lead',
   location: 'Tel Aviv, Israel',
   tagline: 'Building the ForgeStack open-source ecosystem — React, TypeScript, Node.js.',
+  bio: 'Full stack developer and team lead based in Tel Aviv. I design and ship production apps with React, Node.js, and MongoDB — and maintain the ForgeStack npm ecosystem. Passionate about clean architecture, AI-assisted workflows, and open source.',
+  avatarUrl: `${import.meta.env.BASE_URL}profile.jpg`,
   githubUrl: 'https://github.com/yaghobieh',
-  linkedinUrl: 'https://www.linkedin.com/in/johnyaghobieh',
+  linkedinUrl: 'https://www.linkedin.com/in/john-yaghobieh-4baa93107/',
   npmUrl: 'https://www.npmjs.com/~yaghobieh',
   forgeStackUrl: 'https://github.com/yaghobieh?tab=repositories',
   siteUrl: 'https://yaghobieh.github.io/yaghobieh/',
@@ -41,6 +43,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/bear',
     githubUrl: 'https://github.com/yaghobieh/bear',
+    landingUrl: 'https://bearui.com',
   },
   {
     id: 'grid-table',
@@ -51,6 +54,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/grid-table',
     githubUrl: 'https://github.com/yaghobieh/grid-table',
+    landingUrl: 'https://grid-table.com',
   },
   {
     id: 'synapse',
@@ -61,6 +65,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/synapse',
     githubUrl: 'https://github.com/yaghobieh/synapse',
+    landingUrl: 'https://forgestack.dev/synapse',
   },
   {
     id: 'harbor',
@@ -71,6 +76,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'SHIPPING',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/harbor',
     githubUrl: 'https://github.com/yaghobieh/Harbor',
+    landingUrl: 'https://forgedevstack.com',
   },
   {
     id: 'anvil',
@@ -91,6 +97,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'SHIPPING',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/aerocraft',
     githubUrl: 'https://github.com/yaghobieh/aerocraft',
+    landingUrl: 'https://aerocraftjs.com',
   },
   {
     id: 'forge-compass',
@@ -101,6 +108,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/forge-compass',
     githubUrl: 'https://github.com/yaghobieh/compass',
+    landingUrl: 'https://forgedevstack.com',
   },
   {
     id: 'forge-form',
@@ -111,6 +119,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/forge-form',
     githubUrl: 'https://github.com/yaghobieh/forge-form',
+    landingUrl: 'https://forgedevstack.com/forge-form',
   },
   {
     id: 'forge-query',
@@ -121,6 +130,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/forge-query',
     githubUrl: 'https://github.com/yaghobieh/forge-query',
+    landingUrl: 'https://forgedevstack.com/query',
   },
   {
     id: 'forge-cli',
@@ -131,6 +141,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'SHIPPING',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/forge-cli',
     githubUrl: 'https://github.com/yaghobieh/forge-cli',
+    landingUrl: 'https://forgedevstack.com',
   },
   {
     id: 'forge-studio',
@@ -161,6 +172,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'SHIPPING',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/rail',
     githubUrl: 'https://github.com/yaghobieh/rail',
+    landingUrl: 'https://railjs.com',
   },
   {
     id: 'lingo',
@@ -171,6 +183,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'BETA',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/lingo',
     githubUrl: 'https://github.com/yaghobieh/lingo',
+    landingUrl: 'https://forgedevstack.com',
   },
   {
     id: 'kiln',
@@ -181,6 +194,7 @@ export const PACKAGES: PackageEntry[] = [
     status: 'OPERATIONAL',
     npmUrl: 'https://www.npmjs.com/package/@forgedevstack/kiln',
     githubUrl: 'https://github.com/yaghobieh/kiln',
+    landingUrl: 'https://forgedevstack.com',
   },
 ];
 
@@ -277,19 +291,36 @@ export const FOOTER_LINKS = [
   { id: 'npm', label: 'npm Packages', href: PROFILE.npmUrl },
 ] as const;
 
+export const COLLAGE_GROUP_ORDER = ['frontend', 'backend', 'data', 'ops', 'ai', 'styling', 'tools'] as const;
+
+export const COLLAGE_GROUP_LABELS: Record<import('./profile.types').CollageCategory, string> = {
+  frontend: 'Frontend',
+  backend: 'Backend',
+  data: 'Data',
+  ops: 'DevOps',
+  ai: 'AI & LLM',
+  styling: 'Styling',
+  tools: 'Tools',
+};
+
 export const COLLAGE_TECH = [
   { id: 'react', name: 'React', slug: 'react', brandColor: '61DAFB', category: 'frontend' },
   { id: 'node', name: 'Node.js', slug: 'nodedotjs', brandColor: '339933', category: 'backend' },
+  { id: 'wordpress', name: 'WordPress', slug: 'wordpress', brandColor: '21759B', category: 'backend' },
+  { id: 'php', name: 'PHP', slug: 'php', brandColor: '777BB4', category: 'backend' },
   { id: 'mongo', name: 'MongoDB', slug: 'mongodb', brandColor: '47A248', category: 'data' },
+  { id: 'sql', name: 'SQL', slug: 'postgresql', brandColor: '4169E1', category: 'data' },
   { id: 'docker', name: 'Docker', slug: 'docker', brandColor: '2496ED', category: 'ops' },
   { id: 'kubernetes', name: 'Kubernetes', slug: 'kubernetes', brandColor: '326CE5', category: 'ops' },
   { id: 'jenkins', name: 'Jenkins', slug: 'jenkins', brandColor: 'D24939', category: 'ops' },
-  { id: 'vscode', name: 'VS Code', slug: 'visualstudiocode', brandColor: '007ACC', category: 'tools' },
-  { id: 'php', name: 'PHP', slug: 'php', brandColor: '777BB4', category: 'backend' },
-  { id: 'sql', name: 'SQL', slug: 'postgresql', brandColor: '4169E1', category: 'data' },
+  { id: 'ai', name: 'AI', slug: 'openai', brandColor: '412991', category: 'ai' },
+  { id: 'llm', name: 'LLM', slug: 'huggingface', brandColor: 'FFD21E', category: 'ai' },
+  { id: 'langchain', name: 'LangChain', slug: 'langchain', brandColor: '1C3C3C', category: 'ai' },
+  { id: 'langgraph', name: 'LangGraph', slug: 'langchain', brandColor: '00FF41', category: 'ai' },
   { id: 'css', name: 'CSS', slug: 'css', brandColor: '1572B6', category: 'styling' },
   { id: 'tailwind', name: 'Tailwind', slug: 'tailwindcss', brandColor: '06B6D4', category: 'styling' },
   { id: 'scss', name: 'SCSS', slug: 'sass', brandColor: 'CC6699', category: 'styling' },
+  { id: 'vscode', name: 'VS Code', slug: 'visualstudiocode', brandColor: '007ACC', category: 'tools' },
 ] as const satisfies readonly import('./profile.types').CollageTech[];
 
 export const COLLAGE_ICON_BASE = 'https://cdn.simpleicons.org';

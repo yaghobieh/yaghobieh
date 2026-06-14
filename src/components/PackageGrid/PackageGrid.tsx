@@ -9,6 +9,10 @@ const STATUS_CLASS: Record<StatusLabel, string> = {
   MONITORING: 'badge--monitoring',
 };
 
+function packageLandingUrl(pkg: (typeof PACKAGES)[number]): string {
+  return pkg.landingUrl ?? pkg.npmUrl;
+}
+
 export function PackageGrid() {
   return (
     <section aria-labelledby="packages-heading">
@@ -22,7 +26,13 @@ export function PackageGrid() {
       </div>
       <div className="package-grid">
         {PACKAGES.map((pkg) => (
-          <article key={pkg.id} className="package-card">
+          <a
+            key={pkg.id}
+            href={packageLandingUrl(pkg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="package-card package-card--link"
+          >
             <div className="package-card__header">
               <h3 className="package-card__label">{pkg.label}</h3>
               <span className={`badge ${STATUS_CLASS[pkg.status]}`}>
@@ -32,14 +42,9 @@ export function PackageGrid() {
             <p className="package-card__layer">{pkg.layer}</p>
             <p className="package-card__desc">{pkg.description}</p>
             <div className="package-card__links">
-              <a href={pkg.npmUrl} target="_blank" rel="noopener noreferrer">
-                NPM →
-              </a>
-              <a href={pkg.githubUrl} target="_blank" rel="noopener noreferrer">
-                GITHUB →
-              </a>
+              <span>{pkg.landingUrl ? 'OPEN SITE →' : 'OPEN NPM →'}</span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>
