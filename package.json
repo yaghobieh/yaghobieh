@@ -2,6 +2,7 @@
   "name": "yaghobieh-profile",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://yaghobieh.github.io/yaghobieh/",
   "type": "module",
   "scripts": {
     "dev": "vite",
