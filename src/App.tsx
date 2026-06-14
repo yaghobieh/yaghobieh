@@ -4,6 +4,7 @@ import {
   IntelFeed,
   PackageGrid,
   SkillsPanel,
+  TechCollage,
   TopBar,
 } from './components';
 
@@ -13,6 +14,7 @@ export function App() {
       <TopBar />
       <main className="main">
         <Hero />
+        <TechCollage />
         <div className="dashboard-grid">
           <PackageGrid />
           <aside className="sidebar">

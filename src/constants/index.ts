@@ -1,4 +1,6 @@
 export {
+  COLLAGE_ICON_BASE,
+  COLLAGE_TECH,
   FOOTER_LINKS,
   IDEAS,
   NAV_LINKS,
@@ -9,6 +11,8 @@ export {
 } from './profile.const';
 
 export type {
+  CollageCategory,
+  CollageTech,
   IdeaBrief,
   PackageEntry,
   ProfileData,

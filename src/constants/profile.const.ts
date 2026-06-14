@@ -276,3 +276,20 @@ export const FOOTER_LINKS = [
   { id: 'github', label: 'GitHub Profile', href: PROFILE.githubUrl },
   { id: 'npm', label: 'npm Packages', href: PROFILE.npmUrl },
 ] as const;
+
+export const COLLAGE_TECH = [
+  { id: 'react', name: 'React', slug: 'react', brandColor: '61DAFB', category: 'frontend', span: 2 },
+  { id: 'node', name: 'Node.js', slug: 'nodedotjs', brandColor: '339933', category: 'backend', span: 2 },
+  { id: 'mongo', name: 'MongoDB', slug: 'mongodb', brandColor: '47A248', category: 'data', span: 1 },
+  { id: 'docker', name: 'Docker', slug: 'docker', brandColor: '2496ED', category: 'ops', span: 1 },
+  { id: 'kubernetes', name: 'Kubernetes', slug: 'kubernetes', brandColor: '326CE5', category: 'ops', span: 2 },
+  { id: 'jenkins', name: 'Jenkins', slug: 'jenkins', brandColor: 'D24939', category: 'ops', span: 1 },
+  { id: 'vscode', name: 'VS Code', slug: 'visualstudiocode', brandColor: '007ACC', category: 'tools', span: 1 },
+  { id: 'php', name: 'PHP', slug: 'php', brandColor: '777BB4', category: 'backend', span: 1 },
+  { id: 'sql', name: 'SQL', slug: 'postgresql', brandColor: '4169E1', category: 'data', span: 1 },
+  { id: 'css', name: 'CSS', slug: 'css', brandColor: '1572B6', category: 'styling', span: 1 },
+  { id: 'tailwind', name: 'Tailwind', slug: 'tailwindcss', brandColor: '06B6D4', category: 'styling', span: 1 },
+  { id: 'scss', name: 'SCSS', slug: 'sass', brandColor: 'CC6699', category: 'styling', span: 1 },
+] as const satisfies readonly import('./profile.types').CollageTech[];
+
+export const COLLAGE_ICON_BASE = 'https://cdn.simpleicons.org';

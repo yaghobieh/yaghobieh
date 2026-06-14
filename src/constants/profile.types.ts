@@ -49,3 +49,14 @@ export type SkillEntry = {
   label: string;
   percent: number;
 };
+
+export type CollageCategory = 'frontend' | 'backend' | 'ops' | 'styling' | 'tools' | 'data';
+
+export type CollageTech = {
+  id: string;
+  name: string;
+  slug: string;
+  brandColor: string;
+  category: CollageCategory;
+  span: 1 | 2;
+};

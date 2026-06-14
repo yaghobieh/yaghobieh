@@ -1,0 +1,1 @@
+export { TechCollage } from './TechCollage';
