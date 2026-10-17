@@ -1,1 +1,0 @@
-export { ProfileAbout } from './ProfileAbout';
