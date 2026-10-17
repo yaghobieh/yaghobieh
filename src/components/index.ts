@@ -1,6 +1,8 @@
+export { About } from './About';
+export { Contact } from './Contact';
 export { Footer } from './Footer';
-export { IntelFeed } from './IntelFeed';
-export { PackageGrid } from './PackageGrid';
-export { ProfileAbout } from './ProfileAbout';
-export { TechCollage } from './TechCollage';
-export { TopBar } from './TopBar';
+export { ForgeStack } from './ForgeStack';
+export { Header } from './Header';
+export { Hero } from './Hero';
+export { Projects } from './Projects';
+export { Skills } from './Skills';

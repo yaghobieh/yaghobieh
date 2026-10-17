@@ -4,14 +4,13 @@
 
 # John Yaghobieh
 
-**Full Stack Developer & Team Lead · Tel Aviv, Israel**
+**Full Stack Tech Lead + Agentic AI · Tel Aviv / Petah Tikva, Israel**
 
-[![Open Live Dashboard](https://img.shields.io/badge/▶%20OPEN%20LIVE%20DASHBOARD-00ff41?style=for-the-badge&labelColor=0a0f0c)](https://yaghobieh.github.io/yaghobieh/)
+Creator of **ForgeStack**, an open-source ecosystem of 70+ production-ready React components and dev tools.
 
-> GitHub profile pages show this README only.  
-> **The full interactive dashboard** (same as local `npm run dev`) lives on GitHub Pages ↓
+[![Visit the site](https://img.shields.io/badge/Visit%20the%20site-f97a32?style=for-the-badge&labelColor=12110f)](https://yaghobieh.github.io/yaghobieh/)
 
-[![Dashboard Preview](public/dashboard-preview.png)](https://yaghobieh.github.io/yaghobieh/)
+[![Site preview](public/site-preview.png)](https://yaghobieh.github.io/yaghobieh/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-yaghobieh-181717?style=for-the-badge&logo=github)](https://github.com/yaghobieh)
 [![npm](https://img.shields.io/badge/npm-@forgedevstack-CB3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/~yaghobieh)
@@ -21,11 +20,18 @@
 
 ---
 
-### 🌐 Live dashboard
+### 🌐 Personal site
 
 **[https://yaghobieh.github.io/yaghobieh/](https://yaghobieh.github.io/yaghobieh/)**
 
-Profile · Tech stack · Package monitor · Intel feed — React + Vite, deployed from this repo.
+Work · ForgeStack · Skills · About · Contact. Built with React, TypeScript, Vite and Tailwind, with light and dark themes, deployed from this repo by GitHub Actions.
+
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # type-check + production build (base path /yaghobieh/)
+npm run preview  # serve the production build
+```
 
 <details>
 <summary><strong>First-time Pages setup (one click)</strong></summary>
@@ -37,7 +43,3 @@ If the link above shows “Site not found”:
 3. Re-run the latest [Deploy workflow](https://github.com/yaghobieh/yaghobieh/actions/workflows/deploy.yml)
 
 </details>
-
----
-
-**STATUS: OPERATIONAL** · ForgeStack Intelligence · Built with React + Vite
