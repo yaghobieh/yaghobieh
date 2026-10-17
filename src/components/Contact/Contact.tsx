@@ -13,7 +13,7 @@ export function Contact() {
               aria-hidden="true"
               className="absolute -right-20 -top-28 h-80 w-80 animate-drift rounded-full bg-ember-500/40 blur-3xl"
             />
-            <p className="eyebrow relative !text-ink-300">05 / Contact</p>
+            <p className="eyebrow relative !text-ink-300">06 / Contact</p>
             <h2
               id="contact-heading"
               className="relative mt-6 max-w-3xl font-display text-5xl leading-[1.02] tracking-tight sm:text-7xl"

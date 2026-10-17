@@ -11,7 +11,7 @@ export function ForgeStack() {
   return (
     <Section
       id="forgestack"
-      index="02"
+      index="03"
       eyebrow="Open source"
       title={
         <>
@@ -43,6 +43,9 @@ export function ForgeStack() {
         ))}
       </div>
       <Reveal className="mt-12 flex flex-wrap gap-3">
+        <a href={PROFILE.forgeStackUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
+          forgedevstack.com <Icon name="arrowUpRight" />
+        </a>
         <a href={PROFILE.npmUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost">
           <Icon name="npm" /> All packages on npm
         </a>

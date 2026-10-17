@@ -1,6 +1,7 @@
 import {
   About,
   Contact,
+  Experience,
   Footer,
   ForgeStack,
   Header,
@@ -21,6 +22,7 @@ export function App() {
       <Header />
       <main id="main">
         <Hero />
+        <Experience />
         <Projects />
         <ForgeStack />
         <Skills />

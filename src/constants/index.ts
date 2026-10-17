@@ -1,3 +1,4 @@
+export { EDUCATION, EXPERIENCE } from './experience.const';
 export {
   FORGESTACK_COMPONENT_COUNT,
   PACKAGE_CATEGORIES,
@@ -5,11 +6,11 @@ export {
   PACKAGES,
 } from './packages.const';
 export {
-  FOCUS_AREAS,
   MAILTO_HREF,
   NAV_LINKS,
   PROFILE,
   SOCIAL_LINKS,
+  STRENGTHS,
 } from './profile.const';
 export { PROJECT_STATUS_LABELS, PROJECTS } from './projects.const';
 export { SKILL_GROUPS } from './skills.const';

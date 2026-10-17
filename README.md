@@ -4,9 +4,9 @@
 
 # John Yaghobieh
 
-**Full Stack Tech Lead + Agentic AI · Tel Aviv / Petah Tikva, Israel**
+**Full Stack Tech Lead · Agentic AI · Tel Aviv / Petah Tikva, Israel**
 
-Creator of **ForgeStack**, an open-source ecosystem of 70+ production-ready React components and dev tools.
+Creator of the **ForgeStack** ecosystem, featuring 70+ production-ready React components and modern development tools.
 
 [![Visit the site](https://img.shields.io/badge/Visit%20the%20site-f97a32?style=for-the-badge&labelColor=12110f)](https://yaghobieh.github.io/yaghobieh/)
 
@@ -24,7 +24,7 @@ Creator of **ForgeStack**, an open-source ecosystem of 70+ production-ready Reac
 
 **[https://yaghobieh.github.io/yaghobieh/](https://yaghobieh.github.io/yaghobieh/)**
 
-Work · ForgeStack · Skills · About · Contact. Built with React, TypeScript, Vite and Tailwind, with light and dark themes, deployed from this repo by GitHub Actions.
+Experience · Work · ForgeStack · Skills · About · Contact. Built with React, TypeScript, Vite and Tailwind, with light and dark themes, deployed from this repo by GitHub Actions.
 
 ```bash
 npm install

@@ -4,26 +4,26 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     id: 'frontend',
     label: 'Frontend',
-    items: ['React', 'TypeScript', 'Tailwind', 'CSS / SCSS'],
+    items: ['React', 'Redux', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Sass', 'Angular'],
   },
   {
     id: 'backend',
     label: 'Backend',
-    items: ['Node.js', 'TypeScript', 'REST APIs', 'PHP / WordPress'],
+    items: ['Node.js', 'PHP', 'WordPress', 'REST', 'GraphQL', 'Microservices'],
+  },
+  {
+    id: 'ai',
+    label: 'AI',
+    items: ['Large language models', 'AI API integration', 'Prompt engineering', 'Claude API', 'LangChain', 'LangGraph'],
   },
   {
     id: 'data',
     label: 'Data',
-    items: ['MongoDB', 'SQL'],
+    items: ['MongoDB', 'SQL', 'BigQuery', 'Firebase'],
   },
   {
-    id: 'devops',
-    label: 'DevOps',
-    items: ['Docker', 'Kubernetes', 'Jenkins', 'CI/CD'],
-  },
-  {
-    id: 'ai',
-    label: 'AI & LLM',
-    items: ['LangChain', 'LangGraph', 'Claude API', 'Prompt engineering', 'Agentic workflows'],
+    id: 'tools',
+    label: 'Tools',
+    items: ['Git', 'Jenkins', 'CI/CD', 'Docker', 'Kubernetes', 'Unit testing', 'Code review', 'Agile'],
   },
 ];

@@ -12,6 +12,7 @@ export type ProfileData = {
   githubUrl: string;
   linkedinUrl: string;
   npmUrl: string;
+  forgeStackUrl: string;
   siteUrl: string;
 };
 

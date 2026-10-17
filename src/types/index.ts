@@ -1,3 +1,4 @@
+export type { EducationEntry, ExperienceEntry } from './experience.types';
 export type {
   PackageCategory,
   PackageCategoryId,

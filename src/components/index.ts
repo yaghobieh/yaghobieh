@@ -1,6 +1,7 @@
 export { About } from './About';
 export { Contact } from './Contact';
 export { Footer } from './Footer';
+export { Experience } from './Experience';
 export { ForgeStack } from './ForgeStack';
 export { Header } from './Header';
 export { Hero } from './Hero';

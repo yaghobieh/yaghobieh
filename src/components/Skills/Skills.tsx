@@ -6,14 +6,14 @@ export function Skills() {
   return (
     <Section
       id="skills"
-      index="03"
-      eyebrow="Toolkit"
+      index="04"
+      eyebrow="Technical expertise"
       title={
         <>
           Full stack, <em className="text-ember-600 dark:text-ember-400">end to end</em>.
         </>
       }
-      intro="From the component in the browser to the container in the cluster, and the LLM agents in between."
+      intro="React, Node.js, TypeScript and AI/LLM integration, plus the data and tooling around them."
     >
       <ul className="grid gap-px overflow-hidden rounded-3xl border border-ink-200 bg-ink-200 dark:border-ink-800 dark:bg-ink-800 sm:grid-cols-2 lg:grid-cols-5">
         {SKILL_GROUPS.map((group, index) => (
